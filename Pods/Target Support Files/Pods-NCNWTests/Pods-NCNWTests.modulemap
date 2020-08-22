@@ -1,0 +1,6 @@
+framework module Pods_NCNWTests {
+  umbrella header "Pods-NCNWTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

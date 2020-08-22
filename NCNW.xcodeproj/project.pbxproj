@@ -15,6 +15,10 @@
 		3C4A912724F170160064C28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A912524F170160064C28E /* LaunchScreen.storyboard */; };
 		3C4A913224F170160064C28E /* NCNWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A913124F170160064C28E /* NCNWTests.swift */; };
 		3C4A913D24F170160064C28E /* NCNWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A913C24F170160064C28E /* NCNWUITests.swift */; };
+		3C4A914B24F17DB80064C28E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */; };
+		7670509FCE34D880331DBE94 /* Pods_NCNWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC29E9B42E4D6AAF0F509B9 /* Pods_NCNWTests.framework */; };
+		DAE6DFE2C13D53A5B60ADA4F /* Pods_NCNW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C071A949CDA60B31D2A53 /* Pods_NCNW.framework */; };
+		E0FD4C3E29EF1C39494A2A01 /* Pods_NCNW_NCNWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A3BCDC51B87AC226779E4 /* Pods_NCNW_NCNWUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B2A3BCDC51B87AC226779E4 /* Pods_NCNW_NCNWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNW_NCNWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4A911724F170120064C28E /* NCNW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCNW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4A911A24F170120064C28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C4A911C24F170120064C28E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		3C4A913824F170160064C28E /* NCNWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCNWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4A913C24F170160064C28E /* NCNWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNWUITests.swift; sourceTree = "<group>"; };
 		3C4A913E24F170160064C28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		556C071A949CDA60B31D2A53 /* Pods_NCNW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C5EA50A1481338BEFA77D4D /* Pods-NCNW-NCNWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNW-NCNWUITests.release.xcconfig"; path = "Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BC29E9B42E4D6AAF0F509B9 /* Pods_NCNWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC34658FB7233419E5EB78D /* Pods-NCNWTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNWTests.debug.xcconfig"; path = "Target Support Files/Pods-NCNWTests/Pods-NCNWTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A39347BA060E1FEBD77C5D7D /* Pods-NCNW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNW.release.xcconfig"; path = "Target Support Files/Pods-NCNW/Pods-NCNW.release.xcconfig"; sourceTree = "<group>"; };
+		EB86826FAE287C9B31E7BD9F /* Pods-NCNWTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNWTests.release.xcconfig"; path = "Target Support Files/Pods-NCNWTests/Pods-NCNWTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7EA8693D07E57E827EDEF36 /* Pods-NCNW-NCNWUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNW-NCNWUITests.debug.xcconfig"; path = "Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF5E415E55951C7ED1942D47 /* Pods-NCNW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNW.debug.xcconfig"; path = "Target Support Files/Pods-NCNW/Pods-NCNW.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE6DFE2C13D53A5B60ADA4F /* Pods_NCNW.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7670509FCE34D880331DBE94 /* Pods_NCNWTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FD4C3E29EF1C39494A2A01 /* Pods_NCNW_NCNWUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3941CA76717953E1643B9030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF5E415E55951C7ED1942D47 /* Pods-NCNW.debug.xcconfig */,
+				A39347BA060E1FEBD77C5D7D /* Pods-NCNW.release.xcconfig */,
+				F7EA8693D07E57E827EDEF36 /* Pods-NCNW-NCNWUITests.debug.xcconfig */,
+				7C5EA50A1481338BEFA77D4D /* Pods-NCNW-NCNWUITests.release.xcconfig */,
+				9CC34658FB7233419E5EB78D /* Pods-NCNWTests.debug.xcconfig */,
+				EB86826FAE287C9B31E7BD9F /* Pods-NCNWTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3C4A910E24F170120064C28E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				3C4A913024F170160064C28E /* NCNWTests */,
 				3C4A913B24F170160064C28E /* NCNWUITests */,
 				3C4A911824F170120064C28E /* Products */,
+				3941CA76717953E1643B9030 /* Pods */,
+				C4FE664EB31AF1844C189042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +132,7 @@
 		3C4A911924F170120064C28E /* NCNW */ = {
 			isa = PBXGroup;
 			children = (
+				3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */,
 				3C4A911A24F170120064C28E /* AppDelegate.swift */,
 				3C4A911C24F170120064C28E /* SceneDelegate.swift */,
 				3C4A911E24F170120064C28E /* ContentView.swift */,
@@ -136,6 +170,16 @@
 			path = NCNWUITests;
 			sourceTree = "<group>";
 		};
+		C4FE664EB31AF1844C189042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				556C071A949CDA60B31D2A53 /* Pods_NCNW.framework */,
+				3B2A3BCDC51B87AC226779E4 /* Pods_NCNW_NCNWUITests.framework */,
+				8BC29E9B42E4D6AAF0F509B9 /* Pods_NCNWTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C4A914124F170160064C28E /* Build configuration list for PBXNativeTarget "NCNW" */;
 			buildPhases = (
+				B17BEC1EF7850B595057DC5E /* [CP] Check Pods Manifest.lock */,
 				3C4A911324F170120064C28E /* Sources */,
 				3C4A911424F170120064C28E /* Frameworks */,
 				3C4A911524F170120064C28E /* Resources */,
+				6D0C0F12676AD96BD6C16C0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C4A914424F170160064C28E /* Build configuration list for PBXNativeTarget "NCNWTests" */;
 			buildPhases = (
+				02F5833418FF667EF212E877 /* [CP] Check Pods Manifest.lock */,
 				3C4A912924F170160064C28E /* Sources */,
 				3C4A912A24F170160064C28E /* Frameworks */,
 				3C4A912B24F170160064C28E /* Resources */,
@@ -178,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C4A914724F170160064C28E /* Build configuration list for PBXNativeTarget "NCNWUITests" */;
 			buildPhases = (
+				A152EFE4879E707A3C095D36 /* [CP] Check Pods Manifest.lock */,
 				3C4A913424F170160064C28E /* Sources */,
 				3C4A913524F170160064C28E /* Frameworks */,
 				3C4A913624F170160064C28E /* Resources */,
+				1BE662D6C8FD31FBE5269FFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4A912724F170160064C28E /* LaunchScreen.storyboard in Resources */,
+				3C4A914B24F17DB80064C28E /* GoogleService-Info.plist in Resources */,
 				3C4A912424F170160064C28E /* Preview Assets.xcassets in Resources */,
 				3C4A912124F170160064C28E /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +311,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02F5833418FF667EF212E877 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCNWTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BE662D6C8FD31FBE5269FFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D0C0F12676AD96BD6C16C0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCNW/Pods-NCNW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NCNW/Pods-NCNW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NCNW/Pods-NCNW-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A152EFE4879E707A3C095D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCNW-NCNWUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17BEC1EF7850B595057DC5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NCNW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C4A911324F170120064C28E /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		3C4A914224F170160064C28E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF5E415E55951C7ED1942D47 /* Pods-NCNW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +606,7 @@
 		};
 		3C4A914324F170160064C28E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39347BA060E1FEBD77C5D7D /* Pods-NCNW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +627,7 @@
 		};
 		3C4A914524F170160064C28E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CC34658FB7233419E5EB78D /* Pods-NCNWTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +650,7 @@
 		};
 		3C4A914624F170160064C28E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB86826FAE287C9B31E7BD9F /* Pods-NCNWTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +673,7 @@
 		};
 		3C4A914824F170160064C28E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7EA8693D07E57E827EDEF36 /* Pods-NCNW-NCNWUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +694,7 @@
 		};
 		3C4A914924F170160064C28E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5EA50A1481338BEFA77D4D /* Pods-NCNW-NCNWUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
