@@ -188,6 +188,7 @@ struct Login: View {
                     
                     self.error = err!.localizedDescription
                     self.alert.toggle()
+                    return
                 }
                 
                 print("success")
