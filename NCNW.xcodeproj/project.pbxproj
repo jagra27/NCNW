@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1C51C124F1911C0083E22A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C1C51C024F1911C0083E22A /* GoogleService-Info.plist */; };
 		3C4A911B24F170120064C28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A911A24F170120064C28E /* AppDelegate.swift */; };
 		3C4A911D24F170120064C28E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A911C24F170120064C28E /* SceneDelegate.swift */; };
 		3C4A911F24F170120064C28E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A911E24F170120064C28E /* ContentView.swift */; };
@@ -15,7 +16,6 @@
 		3C4A912724F170160064C28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A912524F170160064C28E /* LaunchScreen.storyboard */; };
 		3C4A913224F170160064C28E /* NCNWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A913124F170160064C28E /* NCNWTests.swift */; };
 		3C4A913D24F170160064C28E /* NCNWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A913C24F170160064C28E /* NCNWUITests.swift */; };
-		3C4A914B24F17DB80064C28E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */; };
 		7670509FCE34D880331DBE94 /* Pods_NCNWTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC29E9B42E4D6AAF0F509B9 /* Pods_NCNWTests.framework */; };
 		DAE6DFE2C13D53A5B60ADA4F /* Pods_NCNW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 556C071A949CDA60B31D2A53 /* Pods_NCNW.framework */; };
 		E0FD4C3E29EF1C39494A2A01 /* Pods_NCNW_NCNWUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2A3BCDC51B87AC226779E4 /* Pods_NCNW_NCNWUITests.framework */; };
@@ -40,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		3B2A3BCDC51B87AC226779E4 /* Pods_NCNW_NCNWUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNW_NCNWUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1C51C024F1911C0083E22A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3C4A911724F170120064C28E /* NCNW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCNW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4A911A24F170120064C28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C4A911C24F170120064C28E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		3C4A913824F170160064C28E /* NCNWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCNWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4A913C24F170160064C28E /* NCNWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCNWUITests.swift; sourceTree = "<group>"; };
 		3C4A913E24F170160064C28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		556C071A949CDA60B31D2A53 /* Pods_NCNW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5EA50A1481338BEFA77D4D /* Pods-NCNW-NCNWUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCNW-NCNWUITests.release.xcconfig"; path = "Target Support Files/Pods-NCNW-NCNWUITests/Pods-NCNW-NCNWUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8BC29E9B42E4D6AAF0F509B9 /* Pods_NCNWTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCNWTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				9CC34658FB7233419E5EB78D /* Pods-NCNWTests.debug.xcconfig */,
 				EB86826FAE287C9B31E7BD9F /* Pods-NCNWTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -132,7 +131,7 @@
 		3C4A911924F170120064C28E /* NCNW */ = {
 			isa = PBXGroup;
 			children = (
-				3C4A914A24F17DB80064C28E /* GoogleService-Info.plist */,
+				3C1C51C024F1911C0083E22A /* GoogleService-Info.plist */,
 				3C4A911A24F170120064C28E /* AppDelegate.swift */,
 				3C4A911C24F170120064C28E /* SceneDelegate.swift */,
 				3C4A911E24F170120064C28E /* ContentView.swift */,
@@ -290,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4A912724F170160064C28E /* LaunchScreen.storyboard in Resources */,
-				3C4A914B24F17DB80064C28E /* GoogleService-Info.plist in Resources */,
+				3C1C51C124F1911C0083E22A /* GoogleService-Info.plist in Resources */,
 				3C4A912424F170160064C28E /* Preview Assets.xcassets in Resources */,
 				3C4A912124F170160064C28E /* Assets.xcassets in Resources */,
 			);
