@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
     var body: some View {
@@ -23,11 +24,55 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Home : View {
     
+     @State var status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+    
     var body: some View{
         
         VStack{
             
-            Login()
+            if self.status{
+                Homescreen()
+            }
+            else{
+                Login()
+            }
+        }
+        .onAppear {
+            NotificationCenter.default.addObserver(forName: NSNotification.Name("status"), object: nil, queue: .main) { (_) in
+                
+                self.status = UserDefaults.standard.value(forKey: "status") as? Bool ?? false
+            }
+        }
+    }
+}
+
+struct Homescreen : View {
+    
+    var body: some View{
+        
+        VStack{
+            
+            Text("Logged in successfully")
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color.black.opacity(0.7))
+            
+                Button(action: {
+                    
+                    try! Auth.auth().signOut()
+                    UserDefaults.standard.set(false, forKey: "status")
+                    NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
+                    
+                }) {
+                    
+                    Text("Log out")
+                        .foregroundColor(.white)
+                        .padding(.vertical)
+                        .frame(width: UIScreen.main.bounds.width - 50)
+                }
+            .background(Color("Color"))
+            .cornerRadius(10)
+            .padding(.top, 25)
         }
     }
 }
@@ -56,7 +101,8 @@ struct Login: View {
                         .foregroundColor(self.color)
                     
                     TextField("Email", text: self.$email)
-                    .padding()
+                        .autocapitalization(.none)
+                        .padding()
                         .background(RoundedRectangle(cornerRadius: 4).stroke(self.email != "" ? Color("Color") : self.color, lineWidth: 2))
                         .padding(.top, 25)
                         .frame(width: 300, height: nil)
@@ -68,10 +114,12 @@ struct Login: View {
                         if self.visible{
                             
                             TextField("Password", text: self.$pass)
+                                .autocapitalization(.none)
                         }
                         else{
                             
                             SecureField("Password", text: self.$pass)
+                                .autocapitalization(.none)
                         }
                     }
                         
@@ -96,10 +144,12 @@ struct Login: View {
                     
                     Button(action: {
                         
+                        self.reset()
+                        
                     }) {
                         Text("Forgot Password")
                             .fontWeight(.bold)
-                        .foregroundColor(Color("Color"))
+                            .foregroundColor(Color("Color"))
                             .padding(.horizontal, 10)
                     }
                 }
@@ -132,9 +182,45 @@ struct Login: View {
         
         if self.email != "" && self.pass != ""{
             
+            Auth.auth().signIn(withEmail: self.email, password: self.pass) { (res, err) in
+                
+                if err != nil{
+                    
+                    self.error = err!.localizedDescription
+                    self.alert.toggle()
+                }
+                
+                print("success")
+                UserDefaults.standard.set(true, forKey: "status")
+                NotificationCenter.default.post(name: NSNotification.Name("status"), object: nil)
+            }
         }
         else{
             self.error = "Please fill in all the fields"
+            self.alert.toggle()
+        }
+    }
+    
+    func reset(){
+        
+        if self.email != ""{
+            
+            Auth.auth().sendPasswordReset(withEmail: self.email) { (err) in
+                
+                if err != nil{
+                    
+                    self.error = err!.localizedDescription
+                    self.alert.toggle()
+                    return
+                }
+                
+                self.error = "RESET"
+                self.alert.toggle()
+            }
+        }
+        else{
+            
+            self.error = "This email doesn't exist for an account. Contact Pres Jada at jagra27@morgan.edu"
             self.alert.toggle()
         }
     }
@@ -154,7 +240,7 @@ struct ErrorView : View{
                 
                 HStack{
                     
-                    Text("Error")
+                    Text(self.error == "RESET" ? "Message" : "Error")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(self.color)
@@ -164,7 +250,7 @@ struct ErrorView : View{
                 }
                 .padding(.horizontal, 25)
                 
-                Text(self.error)
+                Text(self.error == "RESET" ? "Password reset link has been sent" : self.error )
                     .foregroundColor(self.color)
                     .padding(.top)
                     .padding(.horizontal, 25)
@@ -174,7 +260,7 @@ struct ErrorView : View{
                     self.alert.toggle()
                     
                 }) {
-                    Text("Cancel")
+                    Text(self.error == "RESET" ? "Ok" : "Cancel")
                         .foregroundColor(.white)
                         .padding(.vertical)
                         .frame(width: UIScreen.main.bounds.width - 120)
